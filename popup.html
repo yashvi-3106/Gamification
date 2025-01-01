@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Gamification</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="timer">
+    <h2>Productivity Timer</h2>
+    <p>Work Session: <span id="work-time">25:00</span></p>
+    <button id="start-timer">Start Work</button>
+    <p>Take a Break: <span id="break-time">05:00</span></p>
+    <button id="start-break">Start Break</button>
+  </div>
+
+  <div id="stats">
+    <h3>Your Stats</h3>
+    <p>Points: <span id="points">0</span></p>
+    <h4>Achievements</h4>
+    <ul id="achievements"></ul>
+  </div>
+
+  <!-- Blocklist Section -->
+  <div id="blocklist-section">
+    <h4>Block Distracting Websites</h4>
+    <input type="text" id="blocklist-input" placeholder="Enter website (e.g., facebook.com)">
+    <button id="add-blocklist-btn">Add to Blocklist</button>
+    <ul id="blocklist-display"></ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
